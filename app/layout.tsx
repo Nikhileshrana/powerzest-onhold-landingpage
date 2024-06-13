@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "POWERZEST",
-  description: "POWERZEST ENERGY SOLUTIONS",
+  title: "POWERZEST India Pvt. Ltd.",
+  description: "Discover Powerzest's cutting-edge solar panels and innovative wind mill designs. Harness renewable energy with our latest technology solutions. Learn more today!",
 };
 
 export default function RootLayout({
