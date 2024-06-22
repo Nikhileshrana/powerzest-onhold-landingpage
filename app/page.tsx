@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="bg-[#cfcfcf] text-white py-4 px-6 md:px-8 lg:px-10 flex items-center justify-center shadow-sm">
+      <header className="bg-[#ffffff] text-white px-6 md:px-8 lg:px-10 flex items-center justify-center shadow-sm">
         <div className="flex items-center gap-2">
           <svg className="h-20 w-auto" preserveAspectRatio="xMidYMid meet" data-bbox="1703.906 5494.481 26291.145 10025.297" viewBox="1703.906 5494.481 26291.145 10025.297" height="210mm" width="297mm" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" data-type="color" role="presentation" aria-hidden="true" aria-label="">
             <g>
@@ -26,21 +26,18 @@ export default function Component() {
           </svg>
         </div>
       </header>
-      <main className="flex-1 bg-[#F1F5F9] dark:bg-[#0F172A] p-6 md:p-12 flex items-center justify-center">
+      <main className="flex-1 bg-[#F1F5F9] dark:bg-[black] p-6 md:p-12 flex items-center justify-center">
         <div className="max-w-md mx-auto space-y-8 text-center">
           <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-[#334155]">Thank you for visiting POWERZEST!</h1>
+            <h1 className="text-4xl font-bold text-[#cbd2dc]">Thank you for visiting POWERZEST!</h1>
             <p className="text-[#64748B] dark:text-[#94A3B8]">
-              We are currently under construction and will be opening soon.
+              We are currently Developing something amazing. <br /> We will be right back.
             </p>
           </div>
           <div className="space-y-4">
-            <Button className="w-full bg-[#000000] text-white hover:text-black hover:bg-[#ff5353] focus:ring-[#4F46E5] dark:bg-[#4F46E5] dark:hover:bg-[#4338CA] dark:focus:ring-[#4F46E5]">
-              Notify Me When Open
-            </Button>
-            <Link href="#" className="text-[#000000] hover:underline dark:text-[#ff5a5a]" prefetch={false}>
+            <Button className="w-full bg-[#ffffff] text-black">
               Learn More
-            </Link>
+            </Button>
           </div>
         </div>
       </main>
