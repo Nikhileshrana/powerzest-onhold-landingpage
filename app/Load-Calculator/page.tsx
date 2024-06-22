@@ -28,7 +28,7 @@ const Page = () => {
     const [RefrigeratorCount,setRefrigeratorCount]=useState("");
 
     return (
-        <div className="w-full sm:w-[80vw] border mx-auto py-8 px-5 my-5">
+        <div className="w-full sm:w-[80vw] mx-auto py-8 px-5 my-5">
             <h1 className="text-2xl font-bold mb-6 text-gray-600">Power<span className=' text-red-500'>Zest</span></h1>
             <div className="grid grid-cols-4 gap-4 mb-4 text-center text-green-400">
                 <div className="font-medium text-left">Appliance</div>
@@ -291,7 +291,7 @@ const Page = () => {
 
 
 
-            <div className='px-[6vw] text-right text-green-400'>Total : {(Number(bulbCount)*Number(bulb))+(Number(fanCount)*Number(fan))+(Number(tableFanCount)*Number(tableFan))+(Number(acCount)*Number(ac))+(Number(washingMachineCount)*Number(washingMachine))+(Number(pcLaptopCount)*Number(pcLaptop))+(Number(microwaveOvenCount)*Number(microwaveOven))+(Number(electricIronCount)*Number(electricIron))+(Number(RefrigeratorCount)*Number(Refrigerator))} W</div>
+            <div className='text-xl sm:text-2xl sm:py-5 sm:px-[3rem] text-right text-green-400'>Total : {(Number(bulbCount)*Number(bulb))+(Number(fanCount)*Number(fan))+(Number(tableFanCount)*Number(tableFan))+(Number(acCount)*Number(ac))+(Number(washingMachineCount)*Number(washingMachine))+(Number(pcLaptopCount)*Number(pcLaptop))+(Number(microwaveOvenCount)*Number(microwaveOven))+(Number(electricIronCount)*Number(electricIron))+(Number(RefrigeratorCount)*Number(Refrigerator))} W</div>
 
             
         </div>
