@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select";
 import { Input } from "@/components/ui/input";
 
@@ -15,6 +15,12 @@ const Page = () => {
     const [electricIron, setElectricIron] = useState("");
     const [microwaveOven, setMicrowaveOven] = useState("");
     const [Refrigerator,setRefrigerator]=useState("");
+    const [otherappliance1, setotherappliance1] = useState("");
+    const [otherappliance2, setotherappliance2] = useState("");
+    const [otherappliance3, setotherappliance3] = useState("");
+    const [otherappliance4, setotherappliance4] = useState("");
+
+
 
     const [bulbCount, setBulbCount] = useState("");
     const [fanCount, setFanCount] = useState("");
@@ -26,6 +32,10 @@ const Page = () => {
     const [electricIronCount, setElectricIronCount] = useState("");
     const [microwaveOvenCount, setMicrowaveOvenCount] = useState("");
     const [RefrigeratorCount,setRefrigeratorCount]=useState("");
+    const [otherappliance1count, setotherappliance1count] = useState("");
+    const [otherappliance2count, setotherappliance2count] = useState("");
+    const [otherappliance3count, setotherappliance3count] = useState("");
+    const [otherappliance4count, setotherappliance4count] = useState("");
 
     return (
         <div className="w-full sm:w-[80vw] mx-auto py-8 px-5 my-5">
@@ -286,14 +296,99 @@ const Page = () => {
                 <div className='self-center text-center'>{Number(RefrigeratorCount)*Number(Refrigerator)} W</div>
             </div>
 
+
+
+
+
+
+            <div className="grid grid-cols-4 gap-4 mb-2">
+                <div className='flex self-center'>Other Appliance 1</div>
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance1}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance1((e.target.value))}
+                />
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance1count}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance1count((e.target.value))}
+                />
+                <div className='self-center text-center'>{Number(otherappliance1count)*Number(otherappliance1)} W</div>
+            </div>
+
+
+            <div className="grid grid-cols-4 gap-4 mb-2">
+                <div className='flex self-center'>Other Appliance 2</div>
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance2}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance2((e.target.value))}
+                />
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance2count}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance2count((e.target.value))}
+                />
+                <div className='self-center text-center'>{Number(otherappliance2count)*Number(otherappliance2)} W</div>
+            </div>
+
+
+
+
+            <div className="grid grid-cols-4 gap-4 mb-2">
+                <div className='flex self-center'>Other Appliance 3</div>
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance3}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance3((e.target.value))}
+                />
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance3count}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance3count((e.target.value))}
+                />
+                <div className='self-center text-center'>{Number(otherappliance3count)*Number(otherappliance3)} W</div>
+            </div>
+
+
+
+
+            <div className="grid grid-cols-4 gap-4 mb-2">
+                <div className='flex self-center'>Other Appliance 4</div>
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance4}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance4((e.target.value))}
+                />
+                <Input
+                    type="number"
+                    min={0}
+                    value={otherappliance4count}
+                    placeholder='Enter'
+                    onChange={(e) => setotherappliance4count((e.target.value))}
+                />
+                <div className='self-center text-center'>{Number(otherappliance4count)*Number(otherappliance4)} W</div>
+            </div>
             
 
 
 
 
-            <div className='text-xl sm:text-2xl sm:py-5 sm:px-[3rem] text-right text-green-400'>Total : {(Number(bulbCount)*Number(bulb))+(Number(fanCount)*Number(fan))+(Number(tableFanCount)*Number(tableFan))+(Number(acCount)*Number(ac))+(Number(washingMachineCount)*Number(washingMachine))+(Number(pcLaptopCount)*Number(pcLaptop))+(Number(microwaveOvenCount)*Number(microwaveOven))+(Number(electricIronCount)*Number(electricIron))+(Number(RefrigeratorCount)*Number(Refrigerator))} W</div>
-
-            
+            <div className='text-xl sm:text-2xl sm:py-5 sm:px-[3rem] text-right text-green-400'>Total : {(Number(bulbCount)*Number(bulb))+(Number(fanCount)*Number(fan))+(Number(tableFanCount)*Number(tableFan))+(Number(acCount)*Number(ac))+(Number(washingMachineCount)*Number(washingMachine))+(Number(pcLaptopCount)*Number(pcLaptop))+(Number(microwaveOvenCount)*Number(microwaveOven))+(Number(electricIronCount)*Number(electricIron))+(Number(RefrigeratorCount)*Number(Refrigerator))+(Number(otherappliance1count)*Number(otherappliance1))+(Number(otherappliance2count)*Number(otherappliance2))+(Number(otherappliance3count)*Number(otherappliance3))+(Number(otherappliance4count)*Number(otherappliance4))} W</div>
         </div>
     );
 }
