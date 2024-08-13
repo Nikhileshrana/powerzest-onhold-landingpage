@@ -55,6 +55,7 @@ export default function Chatbox() {
             </div>
 
             <div className='h-full w-full'>
+                
                 <TextGenerateEffect className='p-5 w-full' key={promptreply} duration={2} filter={false} words={promptreply}/>
             </div>
         </>
